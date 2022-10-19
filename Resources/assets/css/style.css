@@ -1,10 +1,56 @@
+/*visualisation boxes position and style */
 .box {
+  float: right;
   height: 400px;
   padding: 20px;
   color: #fff;
-  background: deepskyblue;
+  background: white;
 }
 
 .margin-top-80 {
   margin-top: 80px;
+}
+
+/*set navigation bar to the right position*/
+
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(201, 198, 198, 0.8);
+}
+
+/* dropdown menu setting */
+.navbar-custom .dropdown-item {
+  color: black;
+}
+
+/* font size, type, position for title on each page */
+h1{
+  font-size: 26px;
+  font-weight: bold;
+  text-align:left;
+}
+
+/* font size, type, position for title on each page */
+h2{
+  font-size: 20px;
+  font-weight: bold;
+  text-align:left;
+}
+
+/* font size, type, position for title on each page */
+p{
+  color: black;
+  text-align:left;
+}
+
+/* image size on each page*/
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* navbar color */
+.navbar-custom { 
+  background-color: rgb(4, 110, 110) !important; 
 }

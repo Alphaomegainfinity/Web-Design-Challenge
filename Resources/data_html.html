@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latitude</title>
+
+    <!--insert functions, css and style-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="Resources/assets/css/style.css">
 </head>
@@ -11,7 +16,7 @@
 
   <!--Insert Bootstrap Navbar-->  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Latitude</a>
+        <a class="navbar-brand" href="../index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,21 +31,23 @@
 
               <!--Insert submenu & menu bar to go to other pages-->
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
-                <a class="dropdown-item" href="hum.html">Humidity</a>
-                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                <a class="dropdown-item" href="../visualisations/visualisation.html">Max Temperature</a>
+                <a class="dropdown-item" href="../visualisations/hum.html">Humidity</a>
+                <a class="dropdown-item" href="../visualisations/cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="../visualisations/wind.html">Wind Speed</a>
               </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="comparison.html">Comparison</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Resources/data_html.html">Data</a>
+              <a class="nav-link" href="data_html.html">Data</a>
             </li>
           </ul>          
         </div>
       </nav>  
+
+
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 border divbdy">
@@ -51,7 +58,7 @@
 
 <table border="1" class="dataframe">
   <thead class = "thead-light">
-    <tr style="text-align: right;">
+    <tr style="text-align: center;">
       <th>City_ID</th>
       <th>City</th>
       <th>Lat</th>
