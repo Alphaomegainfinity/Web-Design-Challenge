@@ -4,7 +4,7 @@
   height: 400px;
   padding: 20px;
   color: #fff;
-  background: white;
+  background: rgb(253, 251, 251);
 }
 
 .margin-top-80 {
@@ -12,12 +12,44 @@
 }
 
 /*set navigation bar to the right position*/
+.navbar-default .navbar-nav > li > a:hover {
+  color: #4AAAA5;
+}
+/*navbar-right-custom {
+  padding-top: 6px;
+  padding-right: 20px;
+}*/
 
+.navbar-nav{
+  margin-left: auto;
+  background-color: rgb(17, 184, 134)
+}
 
+.navbar-item{
+  margin-left: auto;
+  background-color: rgb(17, 184, 134)
+}
+
+/*create nav-bar text colour*/
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgba(201, 198, 198, 0.8);
+    color: rgba(236, 230, 230, 0.8);
 }
+
+/* setting navbar colour */
+.navbar-custom { 
+  background-color: rgb(6, 98, 126);
+}
+
+.navbar-toggler { 
+  background-color: rgb(17, 184, 134);
+}
+
+/*set navbar brand color*/
+.navbar-brand { 
+  background-color: rgb(17, 184, 134);
+}
+
 
 /* dropdown menu setting */
 .navbar-custom .dropdown-item {
@@ -50,7 +82,9 @@ img {
   height: 100%;
 }
 
-/* navbar color */
-.navbar-custom { 
-  background-color: rgb(4, 110, 110) !important; 
+/* changing background color as per screen size */
+@media screen and (max-width: 1000px) {
+  body{
+      background-color: #f8f6f6;
+  }
 }
