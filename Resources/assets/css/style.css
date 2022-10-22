@@ -20,10 +20,8 @@
   padding-right: 20px;
 }*/
 
-.navbar-nav{
-  margin-left: auto;
-  background-color: rgb(17, 184, 134)
-}
+/*changing navbar menu color*/
+.navbar.navbar-expand-lg.navbar-light {background-color: rgb(17, 184, 134);}
 
 .navbar-item{
   margin-left: auto;
@@ -33,21 +31,12 @@
 /*create nav-bar text colour*/
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgba(236, 230, 230, 0.8);
+    color: rgba(17, 184, 134);
 }
 
 /* setting navbar colour */
 .navbar-custom { 
   background-color: rgb(6, 98, 126);
-}
-
-.navbar-toggler { 
-  background-color: rgb(17, 184, 134);
-}
-
-/*set navbar brand color*/
-.navbar-brand { 
-  background-color: rgb(17, 184, 134);
 }
 
 
@@ -82,8 +71,9 @@ img {
   height: 100%;
 }
 
-/* changing background color as per screen size */
-@media screen and (max-width: 1000px) {
+/* changing background color and navbar as per screen size */
+@media screen and (max-width: 600px) {
+  .navbar.navbar-expand-lg.navbar-light {background-color: rgb(54, 128, 170);}
   body{
       background-color: #f8f6f6;
   }

@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latitude</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="Resources/assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latitude</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Resources/assets/css/style.css">
 </head>
+
 <body>
 
-  <!--Insert Bootstrap Navbar-->  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">      
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
-              </a>
+  <!--Insert Bootstrap Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="../index.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-              <!--Insert submenu & menu bar to go to other pages-->
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="visualisation.html">Max Temperature</a>
-                <a class="dropdown-item" href="hum.html">Humidity</a>
-                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                <a class="dropdown-item" href="wind.html">Wind Speed</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../comparison.html">Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../Resources/data_html.html">Data</a>
-            </li>
-          </ul>          
-        </div>
-      </nav>   
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
 
-       <!--Visualisation page contents with page width automatically adjust as per content-->    
+          <!--Insert submenu & menu bar to go to other pages-->
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="visualisation.html">Max Temperature</a>
+            <a class="dropdown-item" href="hum.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Resources/data_html.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Visualisation page contents with page width automatically adjust as per content-->
   <div class="container">
-    <div class="row">      
-        <div class="col col-md-6 col-sm-10 col-xs-10">
-          <h1 class="h1">Max Temperature</h1>
-          <hr>
-          <img class="img-fluid rounded float-left" src="../Resources/assets/images/Fig1.png">
-          <p class="lead">The weather gets significantly warmer as it gets closer to the equator. Moreover, the weather in northern hemisphere likely to get warmer at this time of the year than in the southern hemisphere</p>
-          <p class="lead">At this time of the year, the northern hemisphere received more sunlight time during the day so it may explain the reason of the changing in temperature.</p>  
-        </div>
+    <div class="row">
+      <div class="col col-md-6 col-sm-10 col-xs-10">
+        <h1 class="h1">Max Temperature</h1>
+        <hr>
+        <img class="img-fluid rounded float-left" src="../Resources/assets/images/Fig1.png">
+        <p class="lead">The weather gets significantly warmer as it gets closer to the equator. Moreover, the weather in
+          northern hemisphere likely to get warmer at this time of the year than in the southern hemisphere</p>
+        <p class="lead">At this time of the year, the northern hemisphere received more sunlight time during the day so
+          it may explain the reason of the changing in temperature.</p>
+      </div>
 
       <!--creating right handside container for Visualisations graph with links -->
-      <div class="col col-md-6 col-sm-10 col-xs-10">
-        <div class="container box">
-        <h2 class="h2">Visualisations</h2>
-        <hr>
-        <div class = "row" style="height:40%; width:100%">
-          <div class="col col-6 col-md-6">
-          <a href="visualisation.html"><img class="img-fluid thumbnail" src="../Resources/assets/images/Fig1.png" style="height:100%"></a>
-           </div>
-          <div class="col col-6 col-md-6">
-          <a href="hum.html"><img class="img-fluid thumbnail" src="../Resources/assets/images/Fig2.png" style="height:100%"></a>
-          </div>
-        </div>
+      <div class="col">
         
-        <div class ="row" style="height:40%; width:100%">
-          <div class="col col-6 col-md-6">
-          <a href="cloudiness.html"><img class="img-fluid thumbnail" src="../Resources/assets/images/Fig3.png" style="height:100%"></a>
+          <h2 class="h2">Visualisations</h2>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <a href="visualisation.html"><img class="img-fluid thumbnail" src="../Resources/assets/images/Fig1.png"
+                  style="height:100%"></a>
+            </div>
+            <div class="col">
+              <a href="hum.html"><img class="img-fluid thumbnail" src="../Resources/assets/images/Fig2.png"
+                  style="height:100%"></a>
+            </div>
           </div>
-          <div class="col col-6 col-md-6">
-            <a href="wind.html"><img class="img-fluid thumbnail" src="../Resources/assets/images/Fig4.png" style="height:100%"></a>
+
+          <div class="row">
+            <div class="col">
+              <a href="cloudiness.html"><img class="img-fluid thumbnail" src="../Resources/assets/images/Fig3.png"
+                  style="height:100%"></a>
+            </div>
+            <div class="col">
+              <a href="wind.html"><img class="img-fluid thumbnail" src="../Resources/assets/images/Fig4.png"
+                  style="height:100%"></a>
+            </div>
           </div>
-        </div>
-        </div>
+        
       </div>
     </div>
-        
+
   </div>
 
-  
+
 </body>
+
 </html>
